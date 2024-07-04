@@ -1,0 +1,97 @@
+*{
+    /* รีเซ็ทค่าและกำหนด */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    /* กำหนดการแสดงผล */
+    display: flex;
+    justify-content: space-between;  
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
+.logo a{
+    /* ลบเส้นใต้,ใส่สี,ตัวหนา,กำหนดขนาด */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu{
+    /* กำหนดให้อยู่บันทัดเดียวกัน และลบจุด */
+     display: flex;  
+    list-style: none; 
+}
+
+.menu li{
+    /* กำหนดระยะห่าง */
+    margin-left: 20px;   
+} 
+
+.menu li a{
+    /* กำหนดให้ลบเส้นใต้ */
+    text-decoration: none;
+    color: #333;
+    /* กำหนดสี */
+}
+
+.banner {
+    /* กำหนดแบล็คกราว */
+    /* กำหนดความสูง */
+    background-color: teal;
+    color: #fff;
+    height: 400px;
+    /* กำหนดให้อยู่กลาง */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-info{
+    /* กำหนดให้ข้อความอยู่กลาง */
+    text-align: center;
+}
+
+.banner-info img{
+    /* กำหนดขนาดรูป */
+    /* กำหนดรูปเป็นวงกลม */
+    width: 250px;
+    border-radius: 100%;
+}
+
+main{
+    /* กำหนดให้เป็นคอลัม */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main div{
+    /* กำหนดข้อความไม่ให้ติดกันมาก */
+    padding: 20px;
+}
+
+main div p{
+    /* กำหนดข้อความ ให้เว้นบันทัด */
+     margin-top: 20px;
+}
+
+main img{
+    /* กำหนดขนาดรูปภาพ */
+    /* กำหนดรูปภาพให้โค้งมน */
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+footer{
+    /* กำหนดสีแบล็คกราว,สีตัวหนังสือ ,ความหนาของสีแบล็คกราว,ตัวหนังสือตรงกลาง*/
+
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
