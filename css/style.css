@@ -1,97 +1,52 @@
-*{
-    /* รีเซ็ทค่าและกำหนด */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+} */
+.header {
+  background-color: #55585d;
+  color: #fff;
+  text-align: center;
+  width: 100%; /* ให้กล่องคลุมพื้นที่ทั้งหมด */
+  padding: 20px; /* เพิ่มพื้นที่ภายในกล่อง */
+  border-radius: 15px;
+  margin-bottom: 100px; /* ปรับขอบให้เป็น 0 */
+  box-sizing: border-box; /* ให้รวม padding ในการคำนวณขนาด */
 }
-
-nav {
-    /* กำหนดการแสดงผล */
-    display: flex;
-    justify-content: space-between;  
-    /* border: 1px solid red; */
-    padding: 10px;
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px; /* เพิ่มระยะห่างระหว่างกล่อง */
+  flex-wrap: wrap; /* ให้กล่องยืดหยุ่นในแนวตั้ง */
 }
-
-.logo a{
-    /* ลบเส้นใต้,ใส่สี,ตัวหนา,กำหนดขนาด */
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 20px;
+p {
+  text-align: center;
 }
-
-.menu{
-    /* กำหนดให้อยู่บันทัดเดียวกัน และลบจุด */
-     display: flex;  
-    list-style: none; 
+.Box1,
+.Box2,
+.Box3 {
+  width: 25%;
+  height: 500px;
+  background-color: #ecf0f6;
+  margin: 10px;
+  border-radius: 15px; /* เพิ่มมุมโค้งมน */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+@media (min-width: 300px) and (max-width: 740px) {
+  .container {
+    flex-direction: column; /* ให้กล่องจัดเรียงในแนวตั้ง */
+    align-items: center; /* จัดกลางแนวนอน */
+  }
 
-.menu li{
-    /* กำหนดระยะห่าง */
-    margin-left: 20px;   
-} 
-
-.menu li a{
-    /* กำหนดให้ลบเส้นใต้ */
-    text-decoration: none;
-    color: #333;
-    /* กำหนดสี */
-}
-
-.banner {
-    /* กำหนดแบล็คกราว */
-    /* กำหนดความสูง */
-    background-color: teal;
-    color: #fff;
-    height: 400px;
-    /* กำหนดให้อยู่กลาง */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner-info{
-    /* กำหนดให้ข้อความอยู่กลาง */
-    text-align: center;
-}
-
-.banner-info img{
-    /* กำหนดขนาดรูป */
-    /* กำหนดรูปเป็นวงกลม */
-    width: 250px;
-    border-radius: 100%;
-}
-
-main{
-    /* กำหนดให้เป็นคอลัม */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-main div{
-    /* กำหนดข้อความไม่ให้ติดกันมาก */
-    padding: 20px;
-}
-
-main div p{
-    /* กำหนดข้อความ ให้เว้นบันทัด */
-     margin-top: 20px;
-}
-
-main img{
-    /* กำหนดขนาดรูปภาพ */
-    /* กำหนดรูปภาพให้โค้งมน */
-    width: 100%;
-    border-radius: 20px;
-
-}
-
-footer{
-    /* กำหนดสีแบล็คกราว,สีตัวหนังสือ ,ความหนาของสีแบล็คกราว,ตัวหนังสือตรงกลาง*/
-
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  .Box1,
+  .Box2,
+  .Box3 {
+    width: 100%; /* ให้กล่องกว้างเต็มหน้าจอ */
+    height: auto;
+    margin: 10px 0; /* เพิ่มระยะห่างด้านบนและด้านล่าง */
+  }
 }
